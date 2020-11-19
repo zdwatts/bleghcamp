@@ -8,5 +8,5 @@
 		2. frontend/.env
 		3. backend/node_modules/
 		4. frontend/node_modules/
-5. verify database credentials in .env connect to a databse in postgres
+5. verify database credentials in .env connect to a database in postgres
 6. use sequelize-cli commands to run migrations and seeds
