@@ -31,15 +31,16 @@ const SignUpFormPage = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className="signup-form">
       <ul>
         {errors.map((error, idx) => (
           <li key={idx}>{error}</li>
         ))}
       </ul>
-      <label>
+      <label className="field-label">
         Email:
         <input
+          className="field-label__input"
           type="text"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
@@ -49,24 +50,27 @@ const SignUpFormPage = () => {
       <label>
         Username:
         <input
+          className="field-label__input"
           type="text"
           value={username}
           onChange={(e) => setUsername(e.target.value)}
           required
         />
       </label>
-      <label>
+      <label className="field-label">
         Password:
         <input
+          className="field-label__input"
           type="text"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
           required
         />
       </label>
-      <label>
+      <label className="field-label">
         Confirm Password:
         <input
+          className="field-label__input"
           type="text"
           value={confirmPassword}
           onChange={(e) => setConfirmPassword(e.target.value)}
