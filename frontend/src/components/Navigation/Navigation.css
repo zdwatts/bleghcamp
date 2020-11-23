@@ -1,3 +1,7 @@
+li {
+  list-style-type: none;
+}
+
 .header {
   padding: 10px;
   text-align: center;
@@ -21,15 +25,12 @@
 
 .profile-button {
   margin: 5px;
-  padding: 2px;
+  padding: 3px;
+  width: 40px;
 }
 
 .nav {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-li {
-  list-style-type: none;
 }

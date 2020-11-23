@@ -39,8 +39,8 @@ const SignUpFormPage = () => {
           ))}
         </ul>
         <label className="field-label">
-          Email:
           <input
+            placeholder="Email"
             className="field-label__input"
             type="text"
             value={email}
@@ -48,9 +48,9 @@ const SignUpFormPage = () => {
             required
           />
         </label>
-        <label>
-          Username:
+        <label className="field-label">
           <input
+            placeholder="Username"
             className="field-label__input"
             type="text"
             value={username}
@@ -59,8 +59,8 @@ const SignUpFormPage = () => {
           />
         </label>
         <label className="field-label">
-          Password:
           <input
+            placeholder="Password"
             className="field-label__input"
             type="password"
             value={password}
@@ -69,8 +69,8 @@ const SignUpFormPage = () => {
           />
         </label>
         <label className="field-label">
-          Confirm Password:
           <input
+            placeholder="Confirm Password"
             className="field-label__input"
             type="password"
             value={confirmPassword}
