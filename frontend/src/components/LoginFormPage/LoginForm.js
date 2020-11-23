@@ -27,8 +27,8 @@ const LoginForm = () => {
         ))}
       </ul>
       <label className="field-label">
-        Username or Email:
         <input
+          placeholder="Username or Email"
           className="field-label__input"
           type="text"
           value={credential}
@@ -37,8 +37,8 @@ const LoginForm = () => {
         />
       </label>
       <label className="field-label">
-        Password:
         <input
+          placeholder="Password"
           className="field-label__input"
           type="password"
           value={password}

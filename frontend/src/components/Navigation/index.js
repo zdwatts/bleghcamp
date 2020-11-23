@@ -14,10 +14,14 @@ const Navigation = ({ isLoaded }) => {
   } else {
     sessionLinks = (
       <>
-        <LoginFormModal />
-        <NavLink activeClassName="is-active" to="/signup">
-          Sign Up
-        </NavLink>
+        <li>
+          <LoginFormModal />
+        </li>
+        <li>
+          <NavLink activeClassName="is-active" to="/signup">
+            Sign Up
+          </NavLink>
+        </li>
       </>
     );
   }
@@ -30,8 +34,8 @@ const Navigation = ({ isLoaded }) => {
             <NavLink activeClassName="is-active" exact to="/">
               Home
             </NavLink>
-            {isLoaded && sessionLinks}
           </li>
+          {isLoaded && sessionLinks}
         </ul>
       </nav>
     </header>

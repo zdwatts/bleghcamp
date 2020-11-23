@@ -10,9 +10,26 @@
 }
 
 .nav-items {
-  display: inline-block;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 50%;
 }
 
 .is-active {
   color: #ed1c24;
+}
+
+.profile-button {
+  margin: 5px;
+  padding: 2px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+li {
+  list-style-type: none;
 }
