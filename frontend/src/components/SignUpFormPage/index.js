@@ -62,7 +62,7 @@ const SignUpFormPage = () => {
           Password:
           <input
             className="field-label__input"
-            type="text"
+            type="password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             required
@@ -72,7 +72,7 @@ const SignUpFormPage = () => {
           Confirm Password:
           <input
             className="field-label__input"
-            type="text"
+            type="password"
             value={confirmPassword}
             onChange={(e) => setConfirmPassword(e.target.value)}
             required

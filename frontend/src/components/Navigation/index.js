@@ -15,7 +15,9 @@ const Navigation = ({ isLoaded }) => {
     sessionLinks = (
       <>
         <LoginFormModal />
-        <NavLink to="/signup">Sign Up</NavLink>
+        <NavLink activeClassName="is-active" to="/signup">
+          Sign Up
+        </NavLink>
       </>
     );
   }
@@ -27,8 +29,8 @@ const Navigation = ({ isLoaded }) => {
           <li>
             <NavLink activeClassName="is-active" exact to="/">
               Home
-              {isLoaded && sessionLinks}
             </NavLink>
+            {isLoaded && sessionLinks}
           </li>
         </ul>
       </nav>
