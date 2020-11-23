@@ -1,9 +1,3 @@
-body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .login-form {
   border: 1px solid black;
   display: flex;
@@ -13,6 +7,7 @@ body {
 
 .field-label {
   padding: 5px;
+  color: black;
 }
 
 .field-label__input {
