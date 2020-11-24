@@ -15,10 +15,6 @@ module.exports = {
       genre: {
         type: Sequelize.STRING
       },
-      members: {
-        allowNull: false,
-        type: Sequelize.STRING
-      },
       bandPhoto: {
         allowNull: false,
         type: Sequelize.STRING
