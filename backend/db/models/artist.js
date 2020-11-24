@@ -16,7 +16,7 @@ module.exports = (sequelize, DataTypes) => {
   Artist.init({
     artistName: DataTypes.STRING,
     genre: DataTypes.STRING,
-    about: DataTypes.STRING
+    bandPhoto: DataTypes.STRING,
   }, {
     sequelize,
     modelName: 'Artist',
