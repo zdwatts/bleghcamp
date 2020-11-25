@@ -18,17 +18,26 @@ const ArtistPage = () => {
 
   if (loading) return null;
 
-  console.log(artistData)
+  const playSong = () => {
+
+  }
+
 
   return (
     <>
       <h1 className="headings">{artistData.artist.artistName}</h1>
+      <img src={artistData.artist.bandPhoto} alt={artistData.artist.id}/>
       <h2 className="headings">Albums</h2>
       <ul>
-        {artistData.artistAlbums.map(album => <li className="album-title">{album.albumTitle}
-          {/* <ul>
-          {artistData.artistSongs.map(song => <li>{song.songTitle}</li>)}
-          </ul> */}
+        {artistData.artistAlbums.map(album => <li key={album.id} className="album-title">{album.albumTitle}
+          <img alt={album.id} src={album.albumArt}/>
+          <ul>
+            {artistData.artistSongs.map(song =>
+            {
+              if (song.albumId === album.id) {
+                return <li key={song.id} onClick={playSong}>{song.songTitle}</li>
+            }})}
+          </ul>
         </li>)}
       </ul>
     </>
