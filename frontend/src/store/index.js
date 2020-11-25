@@ -5,7 +5,7 @@ import artistReducer from "./artists";
 
 const rootReducer = combineReducers({
   session: sessionReducer,
-  artist: artistReducer,
+  artistData: artistReducer,
 });
 
 let enhancer;
