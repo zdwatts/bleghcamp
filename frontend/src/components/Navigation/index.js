@@ -10,7 +10,18 @@ const Navigation = ({ isLoaded }) => {
 
   let sessionLinks;
   if (sessionUser) {
-    sessionLinks = <ProfileButton user={sessionUser} />;
+    sessionLinks = (
+      <>
+      <li>
+          <NavLink activeClassName="is-active" to="/artists">
+            Browse Artists
+        </NavLink>
+        </li>
+      <li>
+        <ProfileButton user={sessionUser} />
+      </li>
+      </>
+    );
   } else {
     sessionLinks = (
       <>

@@ -3,5 +3,17 @@
 }
 
 .album-title {
-  color: #d0ccd0
+  color: #d0ccd0;
+  font-weight: bolder;
+}
+
+.song-title {
+  font-weight: normal;
+}
+
+img {
+  margin: 10px;
+  height: 500px;
+  width: 500px;
+  object-fit: scale-down;
 }
