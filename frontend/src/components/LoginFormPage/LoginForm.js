@@ -19,6 +19,16 @@ const LoginForm = () => {
     );
   };
 
+  const demoLogin = (e) => {
+    e.preventDefault();
+    setErrors([]);
+    return dispatch(sessionActions.demoLogin({ credential, password })).catch(
+      (res) => {
+        if (res.data && res.data.errors) setErrors(res.data.errors);
+      }
+    );
+  };
+
   return (
     <form onSubmit={handleSubmit} className="login-form">
       <ul>
@@ -49,6 +59,7 @@ const LoginForm = () => {
       <button type="submit" className="login-button">
         Log In
       </button>
+      <button className="demo-login" onClick={demoLogin}>Demo Login</button>
     </form>
   );
 };

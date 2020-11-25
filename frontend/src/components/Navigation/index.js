@@ -13,7 +13,7 @@ const Navigation = ({ isLoaded }) => {
     sessionLinks = (
       <>
       <li>
-        <NavLink activeClassName="is-active" to="/artists">
+        <NavLink className="nav-links" activeClassName="is-active" to="/artists">
             Browse Artists
         </NavLink>
         </li>
@@ -29,7 +29,7 @@ const Navigation = ({ isLoaded }) => {
           <LoginFormModal />
         </li>
         <li>
-          <NavLink activeClassName="is-active" to="/signup">
+          <NavLink className="nav-links" activeClassName="is-active" to="/signup">
             Sign Up
           </NavLink>
         </li>

@@ -5,6 +5,7 @@ import * as sessionActions from "./store/session";
 import Navigation from "./components/Navigation";
 import SignUpFormPage from "./components/SignUpFormPage";
 import ArtistPage from "./components/ArtistPage";
+import Browse from "./components/Browse";
 
 function App() {
   const dispatch = useDispatch();
@@ -19,7 +20,8 @@ function App() {
       {isLoaded && (
         <Switch>
           <Route path="/signup" component={SignUpFormPage}/>
-          <Route path="/artists/:id" component={ArtistPage}/>
+          <Route path="/artists/:id" component={ArtistPage} />
+          <Route path="/artists" component={Browse} />
         </Switch>
       )}
     </>

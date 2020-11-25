@@ -8,18 +8,6 @@ router.get("/:id", asyncHandler(async (req, res) => {
   const artistId = parseInt(req.params.id);
   const artist = await Artist.findByPk(artistId);
 
-  // const artistAlbums = await Song.findAll({
-  //   where: {
-  //     artistId,
-  //     include: {
-  //       model: Album,
-  //       where: {
-  //         artistId
-  //       }
-  //     }
-  //   }
-  // })
-
   const artistSongs = await Song.findAll({
     where: {
       artistId
@@ -38,5 +26,13 @@ router.get("/:id", asyncHandler(async (req, res) => {
     artistSongs
   })
 }));
+
+router.get("/", asyncHandler(async (req, res) => {
+  const artists = await Artist.findAll();
+
+  return res.json({
+    artists
+  })
+}))
 
 module.exports = router;
