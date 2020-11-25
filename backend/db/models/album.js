@@ -16,7 +16,8 @@ module.exports = (sequelize, DataTypes) => {
   Album.init({
     albumTitle: DataTypes.STRING,
     artistId: DataTypes.INTEGER,
-    releaseYear: DataTypes.INTEGER
+    releaseYear: DataTypes.INTEGER,
+    albumArt: DataTypes.STRING,
   }, {
     sequelize,
     modelName: 'Album',
