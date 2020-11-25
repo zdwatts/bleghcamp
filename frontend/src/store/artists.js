@@ -28,7 +28,7 @@ export const getArtist = artistId => {
   }
 }
 
-const initialState = { artist: {} }
+const initialState = { artist: {}, artistAlbums: {}, artistSongs: {} }
 
 const artistReducer = (state = initialState, action) => {
   switch (action.type) {
