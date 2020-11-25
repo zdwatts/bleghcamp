@@ -13,7 +13,7 @@ const Navigation = ({ isLoaded }) => {
     sessionLinks = (
       <>
       <li>
-          <NavLink activeClassName="is-active" to="/artists">
+        <NavLink activeClassName="is-active" to="/artists">
             Browse Artists
         </NavLink>
         </li>
@@ -40,11 +40,11 @@ const Navigation = ({ isLoaded }) => {
   return (
     <header className="header">
       <nav className="nav">
+        <NavLink exact to="/">
+          <img className="logo" alt={""} src={"/images/logo.png"}/>
+        </NavLink>
         <ul className="nav-items">
           <li>
-            <NavLink activeClassName="is-active" exact to="/">
-              Home
-            </NavLink>
           </li>
           {isLoaded && sessionLinks}
         </ul>
