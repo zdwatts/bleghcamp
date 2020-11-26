@@ -13,7 +13,7 @@ const Navigation = ({ isLoaded }) => {
     sessionLinks = (
       <>
       <li>
-        <NavLink className="nav-links" activeClassName="is-active" to="/artists">
+        <NavLink className="nav-links" activeClassName="is-active" exact to="/artists">
             Browse Artists
         </NavLink>
         </li>

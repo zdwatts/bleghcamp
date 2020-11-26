@@ -24,10 +24,6 @@ const ArtistPage = () => {
     )
   }
 
-  console.log("ARTIST:", artistData.artist);
-  console.log("ALBUMS:", artistData.artistAlbums);
-  console.log("SONGS:", artistData.artistSongs);
-
   return (
     <>
       <h1 className="headings">{artistData.artist.artistName}</h1>

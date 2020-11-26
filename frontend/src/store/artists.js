@@ -38,8 +38,6 @@ export const getArtist = artistId => {
 
     dispatch(setArtist(data));
 
-    // console.log(data);
-
     return res;
   }
 }
@@ -47,7 +45,6 @@ export const getArtist = artistId => {
 const initialState = { artist: {}, artistAlbums: [], artistSongs: [], artists: [] }
 
 const artistReducer = (state = initialState, action) => {
-  // console.log(action.payload)
   switch (action.type) {
     case SET_ARTIST:
       return action.payload;

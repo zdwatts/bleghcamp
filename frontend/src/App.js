@@ -6,6 +6,7 @@ import Navigation from "./components/Navigation";
 import SignUpFormPage from "./components/SignUpFormPage";
 import ArtistPage from "./components/ArtistPage";
 import Browse from "./components/Browse";
+import Splash from "./components/Splash";
 
 function App() {
   const dispatch = useDispatch();
@@ -22,6 +23,7 @@ function App() {
           <Route path="/signup" component={SignUpFormPage}/>
           <Route path="/artists/:id" component={ArtistPage} />
           <Route path="/artists" component={Browse} />
+          <Route exact path="/" component={Splash} />
         </Switch>
       )}
     </>
